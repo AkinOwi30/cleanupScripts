@@ -1,0 +1,36 @@
+//---------------Absolute beginning of script_DeleteBulletOnTimer script------------------------------
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class script_DeleteBulletOnTimer : MonoBehaviour
+{//Beginning of script_DeleteBulletOnTimer class
+
+    public int timeUntilDeletion = 3;
+    public GameObject bulletToDelete;
+    
+    // Start is called before the first frame update
+    void Start()
+    {//Beginning of Start function
+        
+    }//End of Start function
+
+    // Update is called once per frame
+    void Update()
+    {//Beginning of Update function
+        
+      destroyBullet();
+
+    }//End of void Update function
+
+    void destroyBullet()
+    {//Beginning of destroyBullet function
+
+        Destroy(bulletToDelete, timeUntilDeletion);
+
+    }//End of destroyBullet function
+
+}//End of the script_DeleteBulletOnTimer class
+
+//---------------Absolute end of script_DeleteBulletOnTimer script------------------------------
